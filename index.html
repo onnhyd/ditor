@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Manipulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="controls">
+        <input type="text" id="textInput" placeholder="Enter text">
+        <button onclick="addText()">Add Text</button>
+        <button onclick="undo()">Undo</button>
+        <button onclick="redo()">Redo</button>
+    </div>
+    <div class="controls">
+        <label for="fontSize">Font Size:</label>
+        <input type="range" id="fontSize" min="10" max="50" oninput="changeStyle()">
+        <label for="color">Color:</label>
+        <input type="color" id="color" oninput="changeStyle()">
+    </div>
+    <div id="textContainer" class="text-container"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
